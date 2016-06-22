@@ -251,7 +251,7 @@ public class EPCalendarPicker: UICollectionViewController {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
         
-        let rect = self.parentViewController.view.frame
+        let rect = self.parentViewController!.view.frame
         let screenWidth = rect.size.width - 7
         return CGSizeMake(screenWidth/7, screenWidth/7);
     }
